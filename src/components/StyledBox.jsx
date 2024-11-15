@@ -8,7 +8,7 @@ export const StyledBox = (props) => {
         backgroundColor: '#ffffff66',
         boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.05)',
         padding: '20px',
-        width: 'auto',
+        width: props.width || 'auto',
         
         ...props.sx
       }}

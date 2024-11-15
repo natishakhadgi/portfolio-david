@@ -5,6 +5,7 @@ import { Experience } from './components/sections/Experience';
 import { Projects } from './components/sections/Projects';
 import { SubHero } from './components/sections/SubHero';
 import { StyledBox } from './components/StyledBox';
+import { Certificates } from './components/sections/Certificates';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         overflowY: 'scroll', 
         justifyContent:'center', 
         alignItems: 'center', 
-        backgroundColor: 'radial-gradient(circle,rgba(170, 170, 170, 1) 0%,rgba(255, 255, 255, 1) 100%)'
+        background: 'radial-gradient(circle,rgba(170, 170, 170, 1) 0%,rgba(255, 255, 255, 1) 100%)'
       }}
     >
       <StyledBox 
@@ -32,6 +33,7 @@ function App() {
         <SubHero />
         <Experience />
         <Projects />
+        <Certificates />
       </StyledBox>
       
     </Box>

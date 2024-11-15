@@ -1,10 +1,9 @@
 
-import { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { Box, Button, Dialog, DialogTitle, Typography, List, ListItem,  } from "@mui/material";
+import { Box, Dialog, DialogTitle, Typography } from "@mui/material";
 
 export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
 
@@ -22,13 +21,13 @@ export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
 
   return (
     <Dialog onClose={handleClose} open={openDialog} fullWidth={true} maxWidth={'xl'} id='popup'>
-      <Box id='popup_box' sx={{height:'80vh', display:'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center', gap:'10px'}}>
+      <Box id='popup_box' sx={{height:'80vh', display:'flex', flexDirection: 'column', alignItems: 'center', gap:'10px', bgcolor:'white'}}>
         <DialogTitle>{proj.title}</DialogTitle>
         <Box sx={{width: '80vw'}}>
           <Slider {...sliderSettings}>
             {
               proj.images.map(img => {
-                return <img src={`${img}`} height={'350px'} width={'auto'} objectFit={'cover'} />
+                return <img src={`${img}`}/>
               })
             }
           </Slider>   

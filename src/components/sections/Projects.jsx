@@ -6,14 +6,13 @@ export const Projects = (() => {
   return (
     <Box>
       <Typography variant='h1'>Projects</Typography>
-      <Box sx={{display: 'grid', gridTemplateColumns: "repeat(auto-fit, minmax(250px, 400px))", gap: "10px"}}>
+      <Box sx={{display: 'grid', gridTemplateColumns: "repeat(auto-fill, minmax(275px, 1fr) )", gap: "10px"}}>
       {
         PROJECTS.map(proj => {
           return <ProjectCard proj={proj}/>
         })
       }
       </Box>
-      
     </Box>
   );
 });

@@ -17,31 +17,31 @@ export const EXPERIENCE = [
       }
     ]
   },
-  // {
-  //   title: "Indie MEGABOOTH",
-  //   roles: [
-  //     {
-  //       role: "Assistant Producer",
-  //       date: "July 2023 – August 2024"
-  //     }
-  //   ]
-  // },
-  // {
-  //   title: "Wicked Fox Games",
-  //   roles: [
-  //     {
-  //       role: "Associate Producer",
-  //       date: "May 2024 - July 2024"
-  //     }
-  //   ]
-  // },
-  // {
-  //   title: "Jim Gray Productions",
-  //   roles: [
-  //     {
-  //       role: "Production Coordinator",
-  //       date: "July 2024 - Present"
-  //     }
-  //   ]
-  // }
+  {
+    title: "Indie MEGABOOTH",
+    roles: [
+      {
+        role: "Assistant Producer",
+        date: "July 2023 – August 2024"
+      }
+    ]
+  },
+  {
+    title: "Wicked Fox Games",
+    roles: [
+      {
+        role: "Associate Producer",
+        date: "May 2024 - July 2024"
+      }
+    ]
+  },
+  {
+    title: "Jim Gray Productions",
+    roles: [
+      {
+        role: "Production Coordinator",
+        date: "July 2024 - Present"
+      }
+    ]
+  }
 ];

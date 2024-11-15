@@ -5,9 +5,7 @@ export const ExperienceCard = ({exp}) => {
     <Box
       sx={{
         borderRadius: '10px',
-        // backgroundColor: '#ffffff66',
-        backgroundColor: 'lightblue',
-
+        backgroundColor: '#ffffff66',
         boxShadow: '0 10px 30px -15px rgba(0, 0, 0, 0.2)',
         border: '1px solid rgba(255, 255, 255, 0.25)',
         width: '100%',
@@ -23,7 +21,7 @@ export const ExperienceCard = ({exp}) => {
           return (
             <Box>
               <Typography>{role.role}</Typography>
-              <Typography>{role.dates}</Typography>
+              <Typography variant='body2'>{role.date}</Typography>
             </Box>
           )
         })

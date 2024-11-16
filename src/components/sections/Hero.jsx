@@ -20,7 +20,7 @@ export const Hero = (() => {
         <Box>
           <Typography align='left' variant="h1">David Koster</Typography>
           <Box>
-            <Typography align='left'>{INTRO_BLURB}</Typography>
+            <Typography variant='body1' align='left'>{INTRO_BLURB}</Typography>
             <Box sx={{display:'flex', flexDirection:'row', gap: 2}}>
             {
               LINKS.map(link => {

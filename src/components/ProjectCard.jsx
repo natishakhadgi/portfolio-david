@@ -26,7 +26,7 @@ export const ProjectCard = ({proj}) => {
             maxHeight: '180px'
           }}
         />
-        <Typography>{proj.title}</Typography>
+        <Typography variant='title2'>{proj.title}</Typography>
       </div>
       <div>
         <Button variant="contained" onClick={() => setOpenDialog(true)}>More Info</Button>

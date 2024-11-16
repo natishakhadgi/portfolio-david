@@ -31,7 +31,7 @@ export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
               })
             }
           </Slider>   
-          <Typography sx={{mt:'30px'}}>{proj.desc}</Typography>
+          <Typography variant='body2' sx={{mt:'30px'}}>{proj.desc}</Typography>
         </Box>
         {/* map links */}
       </Box>

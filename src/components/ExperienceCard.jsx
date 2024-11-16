@@ -9,18 +9,33 @@ export const ExperienceCard = ({exp}) => {
         boxShadow: '0 10px 30px -15px rgba(0, 0, 0, 0.2)',
         border: '1px solid rgba(255, 255, 255, 0.25)',
         width: '100%',
-        maxWidth: '350px'
+        maxWidth: '350px',
+        paddingBottom: '30px'
       }}
     >
       {/* check border */}
-      <img src={`${exp.banner}`} style={{width:'100%', borderRadius: '10px 10px 0 0'}}/>
-      <img src={`${exp.logo}`} style={{width:'95px', borderRadius: '50%'}}/>
-      <Typography>{exp.title}</Typography>
+      <Box sx={{display: 'grid', position: 'relative'}} marginBottom='65px'>
+        <img src={`${exp.banner}`} style={{width:'100%', borderRadius: '10px 10px 0 0'}}/>
+        <img 
+          src={`${exp.logo}`} 
+          style={{
+            width:'95px', 
+            borderRadius: '50%', 
+            // Center image
+            position: 'absolute', 
+            top: '110%',
+            left: '50%', 
+            transform: 'translate(-50%, -50%)'
+          }}
+        />
+      </Box>
+     
+      <Typography variant="title1">{exp.title}</Typography>
       {
         exp.roles.map(role => {
           return (
-            <Box>
-              <Typography>{role.role}</Typography>
+            <Box sx={{marginTop: '15px'}}>
+              <Typography variant="title2">{role.role}</Typography>
               <Typography variant='body2'>{role.date}</Typography>
             </Box>
           )

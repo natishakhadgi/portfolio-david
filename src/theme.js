@@ -20,33 +20,36 @@ let theme = createTheme(
         // '@media (max-width:600px)': {
         //   fontSize: 65,
         // },
+        background: 'linear-gradient(to bottom, transparent 50%, #c8c8c8 50%)',
+        // TODO: don't have it span full width
+        marginBottom: '20px'
       },
-      h2: { // project title
+      title1: { // Exp Company
         fontFamily: 'Poppins',
-        fontSize: 24,
+        fontSize: '25px',
         fontWeight: 500,
-        // color: 'white',
-        // '@media (max-width:600px)': {
-        //   fontSize: 20,
-        // },
+        color: '#000000',
+        textDecoration: 'underline'
       },
-      h3: { // project description
+      title2: { // Exp Role, Proj Title, Certificate Title
         fontFamily: 'Poppins',
-        fontSize: 16,
-        fontWeight: 200,
-        fontStyle: 'italic',
-        // color: 'white',
-        // '@media (max-width:600px)': {
-        //   fontSize: 14,
-        // },
-      },
-      body1: {
-        fontFamily: 'Poppins',
-        fontSize: '1.5rem',
-        // fontWeight: 200,
+        fontSize: '20px',
+        fontWeight: 500,
         color: '#000000',
       },
-      body2: {
+      body1: { // Bio desc
+        fontFamily: 'Poppins',
+        fontSize: '1.5rem',
+        fontWeight: 200,
+        color: '#000000',
+      },
+      body2: { // Experience Date, Project Popup desc
+        fontFamily: 'Poppins',
+        fontWeight: 400,
+        fontSize: '20px',
+        color: '#000000'
+      },
+      bullet: {
         fontFamily: 'Poppins',
         fontWeight: 400,
         fontSize: '20px',

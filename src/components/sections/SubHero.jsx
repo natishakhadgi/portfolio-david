@@ -4,14 +4,14 @@ import { StyledBox } from "../StyledBox";
 
 export const SubHero = (() => {
   return (
-    <Box sx={{display: 'flex', flexDirection: 'row'}}>
+    <Box sx={{display: 'flex', flexDirection: 'row', gap: '20px'}}>
       <StyledBox>
         <Typography variant="h1">Project Experience</Typography>
         <List sx={{ listStyleType: 'disc' }}>
           {
             PROJ_MAN.map(bullet => {
               return <ListItem sx={{ display: 'list-item', pt: 0, pb: '5px' }} key={`project_experience::${bullet}`}>
-                  <Typography>{bullet}</Typography>
+                  <Typography variant='bullet'>{bullet}</Typography>
                 </ListItem>
             })
           }
@@ -23,7 +23,7 @@ export const SubHero = (() => {
           {
             SOFTWARE.map(bullet => {
               return <ListItem sx={{ display: 'list-item', pt: 0, pb: '5px' }} key={`software::${bullet}`}>
-                <Typography>{bullet}</Typography>
+                <Typography variant='bullet'>{bullet}</Typography>
                 </ListItem>
             })
           }

@@ -11,7 +11,9 @@ export const Certificates = (() => {
           CERTIFICATES.map(cert => {
             return (
               <StyledBox key={`${cert.name}`} maxHeight='400px'>
-                <img src={`${cert.image}`} style={{width:'auto', height:'200px'}}/>
+                <div>
+                  <img src={`${cert.image}`} style={{width:'auto', height:'200px'}}/>
+                </div>
                 <Typography variant='title2'>{cert.name}</Typography>
               </StyledBox>
             )

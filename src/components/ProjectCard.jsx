@@ -19,13 +19,15 @@ export const ProjectCard = ({proj}) => {
       }}
     >
       <div>
-        <img 
-          src={`${proj.images[0]}`} 
-          style={{
-            width:'auto', 
-            maxHeight: '180px'
-          }}
-        />
+        <div>
+          <img 
+            src={`${proj.images[0]}`} 
+            style={{
+              width:'auto', 
+              maxHeight: '180px'
+            }}
+          />
+        </div>
         <Typography variant='title2'>{proj.title}</Typography>
       </div>
       <div>

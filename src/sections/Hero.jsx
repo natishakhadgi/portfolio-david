@@ -1,7 +1,8 @@
 import { Box, Button, Grid2, Typography } from "@mui/material";
-import { INTRO_BLURB, LINKS } from "../../assets/constants";
-import { StyledBox } from "../StyledBox";
-import DavidImg from '../../assets/images/davidheadshot.png'
+import { INTRO_BLURB, LINKS } from "../assets/constants";
+import { StyledBox } from "../components/StyledBox";
+import DavidImg from '../assets/images/davidheadshot.png'
+
 
 export const Hero = (() => {
 

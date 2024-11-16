@@ -23,6 +23,14 @@ export const PROJECTS = [
       {
         type: 'itch',
         url: 'https://davidkoster.itch.io/boba-cat'
+      },
+      {
+        type: 'youtube',
+        url: 'https://davidkoster.itch.io/boba-cat'
+      },
+      {
+        type: 'steam',
+        url: 'https://davidkoster.itch.io/boba-cat'
       }
     ],
     images: [bobaCat1, bobaCat2]

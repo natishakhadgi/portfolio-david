@@ -21,8 +21,7 @@ let theme = createTheme(
         //   fontSize: 65,
         // },
         background: 'linear-gradient(to bottom, transparent 50%, #c8c8c8 50%)',
-        // TODO: don't have it span full width
-        marginBottom: '20px'
+        display:'inline',
       },
       title1: { // Exp Company
         fontFamily: 'Poppins',
@@ -67,11 +66,6 @@ let theme = createTheme(
         dark: '',
         contrastText: '#000000'
       },
-      purple: {
-        light: '#E4D8EA',
-        medium: '#C57EC5',
-        dark: '#8E01FD'
-      }
     }
   }
 );

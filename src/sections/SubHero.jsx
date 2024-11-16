@@ -1,6 +1,6 @@
 import { Box, List, ListItem, Typography } from "@mui/material";
-import { PROJ_MAN, SOFTWARE } from "../../assets/constants";
-import { StyledBox } from "../StyledBox";
+import { PROJ_MAN, SOFTWARE } from "../assets/constants";
+import { StyledBox } from "../components/StyledBox";
 
 const listMargin = '20px';
 

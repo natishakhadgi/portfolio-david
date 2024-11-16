@@ -1,11 +1,11 @@
 import './App.css'
 import { Box, Container } from '@mui/material';
-import { Hero } from './components/sections/Hero';
-import { Experience } from './components/sections/Experience';
-import { Projects } from './components/sections/Projects';
-import { SubHero } from './components/sections/SubHero';
+import { Hero } from './sections/Hero';
+import { Experience } from './sections/Experience';
+import { Projects } from './sections/Projects';
+import { SubHero } from './sections/SubHero';
 import { StyledBox } from './components/StyledBox';
-import { Certificates } from './components/sections/Certificates';
+import { Certificates } from './sections/Certificates';
 
 function App() {
 
@@ -25,8 +25,9 @@ function App() {
           width: '90vw',
           // padding: '50px 100px',
           display:'flex',
-        flexDirection: 'column',
-        gap: 2,
+          flexDirection: 'column',
+          gap: 2,
+          background: 'rgba(255, 255, 255, 0.5)'
         }}
       >
         <Hero />

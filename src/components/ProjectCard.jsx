@@ -10,7 +10,7 @@ export const ProjectCard = ({proj}) => {
     <Box
       sx={{
         borderRadius: '10px',
-        backgroundColor: '#ffffff66',
+        backgroundColor: 'rgba(225, 225, 225, 0.1)',
         boxShadow: '0 10px 30px -15px rgba(0, 0, 0, 0.2)',
         border: '1px solid rgba(255, 255, 255, 0.25)',
         padding: {xs: '10px', lg: '16px'},

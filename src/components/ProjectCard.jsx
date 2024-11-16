@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Box, Button, Dialog, Typography } from "@mui/material";
 import { ProjectPopUp } from './ProjectPopUp';
+import { onHoverEnlarge } from '../assets/styles';
 
 export const ProjectCard = ({proj}) => {
   const [openDialog, setOpenDialog] = useState(false);
@@ -15,7 +16,8 @@ export const ProjectCard = ({proj}) => {
         padding: {xs: '10px', lg: '16px'},
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        ...onHoverEnlarge
       }}
     >
       <div>

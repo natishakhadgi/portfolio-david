@@ -1,10 +1,16 @@
 import imbLogo from '../assets/images/experience/imblogo.png';
-import rondayBanner from '../assets/images/experience/rondayLogo.png';
+import imbBanner from '../assets/images/experience/imbBanner.png';
+import rondayBanner from '../assets/images/experience/rondayBanner.png';
+import rondayLogo from '../assets/images/experience/rondayLogo.png';
+import wfLogo from '../assets/images/experience/wflogo.png';
+import wfBanner from '../assets/images/experience/wfBanner.png';
+import jgpBanner from '../assets/images/experience/jgpBanner.png';
+import jgpLogo from '../assets/images/experience/jgpLogo.png';
 
 export const EXPERIENCE = [
   {
     title: "Ronday Technologies",
-    logo: imbLogo,
+    logo: rondayLogo,
     banner: rondayBanner,
     roles: [
       {
@@ -19,10 +25,22 @@ export const EXPERIENCE = [
   },
   {
     title: "Indie MEGABOOTH",
+    logo: imbLogo,
+    banner: imbBanner,
     roles: [
       {
         role: "Assistant Producer",
         date: "July 2023 – August 2024"
+      }
+    ]
+  },
+
+  {
+    title: "Jim Gray Productions",
+    roles: [
+      {
+        role: "Production Coordinator",
+        date: "July 2024 - October 2024"
       }
     ]
   },
@@ -31,25 +49,17 @@ export const EXPERIENCE = [
     roles: [
       {
         role: "Associate Producer",
-        date: "May 2024 - July 2024"
+        date: "May 2024 - Present"
       }
     ]
   },
-  {
-    title: "Jim Gray Productions",
-    roles: [
-      {
-        role: "Production Coordinator",
-        date: "July 2024 - Present"
-      }
-    ]
-  }
 ];
+
 
 export const MOCK_EXPERIENCE = [
   {
     title: "Ronday Technologies",
-    logo: imbLogo,
+    logo: rondayLogo,
     banner: rondayBanner,
     roles: [
       {
@@ -65,7 +75,7 @@ export const MOCK_EXPERIENCE = [
   {
     title: "Indie MEGABOOTH",
     logo: imbLogo,
-    banner: rondayBanner,
+    banner: imbBanner,
     roles: [
       {
         role: "Assistant Producer",
@@ -74,25 +84,25 @@ export const MOCK_EXPERIENCE = [
     ]
   },
   {
-    title: "Wicked Fox Games",
-    logo: imbLogo,
-    banner: rondayBanner,
+    title: "Jim Gray Productions",
+    logo: jgpLogo,
+    banner: jgpBanner,
     roles: [
       {
-        role: "Associate Producer",
-        date: "May 2024 - July 2024"
+        role: "Production Coordinator",
+        date: "July 2024 - October 2024"
       }
     ]
   },
   {
-    title: "Jim Gray Productions",
-    logo: imbLogo,
-    banner: rondayBanner,
-    roles: [
-      {
-        role: "Production Coordinator",
-        date: "July 2024 - Present"
-      }
-    ]
-  }
+    title: "Wicked Fox Games",
+  logo: wfLogo,
+  banner: wfBanner,
+  roles: [
+    {
+      role: "Associate Producer",
+      date: "May 2024 - Present"
+    }
+  ]
+},
 ];

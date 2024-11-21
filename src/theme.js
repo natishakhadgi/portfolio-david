@@ -23,6 +23,11 @@ let theme = createTheme(
         background: 'linear-gradient(to bottom, transparent 50%, #c8c8c8 50%)',
         display:'inline',
       },
+      h2: { // nav title
+        fontFamily: 'Poppins',
+        fontSize: '2rem',
+        fontWeight: 500,
+      },
       title1: { // Exp Company
         fontFamily: 'Poppins',
         fontSize: '25px',
@@ -53,6 +58,12 @@ let theme = createTheme(
         fontWeight: 400,
         fontSize: '20px',
         color: '#000000'
+      },
+      navItem: {
+        fontFamily: 'Poppins',
+        fontWeight: 500,
+        fontSize: '16px',
+        color: 'black'
       },
       button: {
         textTransform: 'none',

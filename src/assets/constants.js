@@ -2,6 +2,28 @@ import CSM from './images/certificates/csm.png';
 import BBG from './images/certificates/bbg.png';
 import GPM from './images/certificates/gpm.png';
 
+export const NAV = [
+  {
+    name: 'Home',
+    link: '#'
+  },
+  {
+    name: 'About Me',
+    link: '#about'
+  },
+  {
+    name: 'Experience',
+    link: '#experience'
+  },
+  {
+    name: 'Projects',
+    link: '#projects'
+  },
+  {
+    name: 'Certificates',
+    link: '#certificates'
+  },
+];
 
 export const LINKS = [
   {

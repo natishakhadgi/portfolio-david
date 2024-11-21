@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Button, Dialog, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { ProjectPopUp } from './ProjectPopUp';
 import { onHoverEnlarge } from '../assets/styles';
 

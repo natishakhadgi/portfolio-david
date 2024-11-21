@@ -1,5 +1,6 @@
 import './App.css'
 import { Box, Container } from '@mui/material';
+import { NavBar } from './components/NavBar';
 import { Hero } from './sections/Hero';
 import { Experience } from './sections/Experience';
 import { Projects } from './sections/Projects';
@@ -13,13 +14,16 @@ function App() {
     <Box 
       sx={{
         display:'flex', 
+        flexDirection: 'column',
+        gap: '20px',
+        paddingTop: '20px',
         width: '100vw',
-        overflowY: 'scroll', 
         justifyContent:'center', 
         alignItems: 'center', 
         background: 'radial-gradient(circle,rgba(170, 170, 170, 1) 0%,rgba(255, 255, 255, 1) 100%)'
       }}
     >
+      <NavBar />
       <StyledBox 
         sx={{
           width: '90vw',
@@ -36,7 +40,6 @@ function App() {
         <Projects />
         <Certificates />
       </StyledBox>
-      
     </Box>
   )
 }

@@ -8,7 +8,7 @@ export const Certificates = (() => {
   return (
     <Box>
       <SectionTitle title='Certificates'/>
-      <Box display={'grid'} gridTemplateColumns="repeat(auto-fill, minmax(280px, 1fr))" gap='10px' justifyItems={'center'}>
+      <Box display={'grid'} gridTemplateColumns="repeat(auto-fit, minmax(320px, 1fr))" gap='10px' justifyItems={'center'}>
         {
           CERTIFICATES.map(cert => {
             return (

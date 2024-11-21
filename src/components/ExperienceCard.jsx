@@ -18,11 +18,7 @@ export const ExperienceCard = ({ exp }) => {
       {/* check border */}
       <Box sx={{ display: 'grid', position: 'relative' }} marginBottom='65px'>
         <img src={`${exp.banner}`} style={{ width: '100%', borderRadius: '10px 10px 0 0' }} />
-<<<<<<< HEAD
         {/* <img
-=======
-         <img
->>>>>>> bd2445ef55556e80564e4cbeed9640802a39feae
           src={`${exp.logo}`}
           style={{
             width: '95px',
@@ -33,11 +29,7 @@ export const ExperienceCard = ({ exp }) => {
             left: '50%',
             transform: 'translate(-50%, -50%)'
           }}
-<<<<<<< HEAD
         /> */}
-=======
-        /> 
->>>>>>> bd2445ef55556e80564e4cbeed9640802a39feae
       </Box>
 
       <Typography variant="title1">{exp.title}</Typography>

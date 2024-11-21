@@ -25,8 +25,8 @@ export const ProjectCard = ({proj}) => {
           <img 
             src={`${proj.images[0]}`} 
             style={{
-              width:'auto', 
-              maxHeight: '180px'
+              width:'100%', 
+              height: '180px'
             }}
           />
         </div>

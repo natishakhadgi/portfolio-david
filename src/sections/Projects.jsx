@@ -9,9 +9,8 @@ export const Projects = (() => {
       <SectionTitle title='Projects'/>
       <Box sx={{display: 'grid', gridTemplateColumns: "repeat(auto-fill, minmax(275px, 1fr) )", gap: "10px"}}>
       {
-        // TODO: key={proj.title} (use after David updates assets)
         PROJECTS.map(proj => {
-          return <ProjectCard proj={proj}/>
+          return <ProjectCard proj={proj} key={proj.title}/>
         })
       }
       </Box>

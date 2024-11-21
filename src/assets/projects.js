@@ -1,7 +1,5 @@
 import bobaCat1 from '../assets/images/projects/bobaCat/screenshot-1.png';
 import bobaCat2 from '../assets/images/projects/bobaCat/screenshot-2.png';
-<<<<<<< HEAD
-=======
 import bobaCat3 from '../assets/images/projects/bobaCat/screenshot-3.png';
 import satiscifi1 from '../assets/images/projects/satiscifi/screenshot-1.png';
 import satiscifi2 from '../assets/images/projects/satiscifi/screenshot-2.png';
@@ -42,7 +40,6 @@ import escape9 from '../assets/images/projects/escapeFHW/screenshot-8.jpg';
 import escape10 from '../assets/images/projects/escapeFHW/screenshot-5.png';
 import escape11 from '../assets/images/projects/escapeFHW/screenshot-10.png';
 import escape12 from '../assets/images/projects/escapeFHW/screenshot-11.png';
->>>>>>> bd2445ef55556e80564e4cbeed9640802a39feae
 
 /*
   First image in images array serves as thumbnail for project.
@@ -67,21 +64,8 @@ export const PROJECTS = [
         type: 'itch',
         url: 'https://davidkoster.itch.io/boba-cat'
       },
-<<<<<<< HEAD
-      {
-        type: 'youtube',
-        url: 'https://davidkoster.itch.io/boba-cat'
-      },
-      {
-        type: 'steam',
-        url: 'https://davidkoster.itch.io/boba-cat'
-      }
-    ],
-    images: [bobaCat1, bobaCat2]
-=======
     ],
     images: [bobaCat1, bobaCat2, bobaCat3]
->>>>>>> bd2445ef55556e80564e4cbeed9640802a39feae
   },
   {
     title: 'SatiSciFi Virtual Concert',
@@ -92,11 +76,7 @@ export const PROJECTS = [
         url: 'https://davidkoster.itch.io/satiscifi-virtual-concert'
       }
     ],
-<<<<<<< HEAD
-    images: [bobaCat1, bobaCat2]
-=======
     images: [satiscifi1, satiscifi2, satiscifi3, satiscifi4]
->>>>>>> bd2445ef55556e80564e4cbeed9640802a39feae
   },
   {
     title: 'Together Again',
@@ -107,31 +87,6 @@ export const PROJECTS = [
         url: 'https://davidkoster.itch.io/together-again'
       }
     ],
-<<<<<<< HEAD
-    images: [bobaCat1, bobaCat2]
-  },
-  {
-    title: 'Boba Cat',
-    desc: "Make boba and prove you're the best milk tea shop in town! In this game, you take control and choose what ingredients to put into milk tea. Different combinations get different amounts of points!",
-    links: [
-      {
-        type: 'itch',
-        url: ''
-      }
-    ],
-    images: [bobaCat1, bobaCat2]
-  },
-  {
-    title: 'Boba Cat',
-    desc: "Make boba and prove you're the best milk tea shop in town! In this game, you take control and choose what ingredients to put into milk tea. Different combinations get different amounts of points!",
-    links: [
-      {
-        type: 'itch',
-        url: ''
-      }
-    ],
-    images: [bobaCat1, bobaCat2]
-=======
     images: [together1, together2, together3, together4, together5]
   },
   {
@@ -177,28 +132,5 @@ export const PROJECTS = [
       }
     ],
     images: [escape1, escape2, escape3, escape4, escape5, escape6, escape7, escape8, escape9, escape10, escape11, escape12]
->>>>>>> bd2445ef55556e80564e4cbeed9640802a39feae
   },
-  // {
-  //   title: 'Boba Cat',
-  //   desc: "Make boba and prove you're the best milk tea shop in town! In this game, you take control and choose what ingredients to put into milk tea. Different combinations get different amounts of points!",
-  //   links: [
-  //     {
-  //       type: 'itch',
-  //       url: ''
-  //     }
-  //   ],
-  //   images: [bobaCat1, bobaCat2]
-  // },
-  // {
-  //   title: 'Boba Cat',
-  //   desc: "Make boba and prove you're the best milk tea shop in town! In this game, you take control and choose what ingredients to put into milk tea. Different combinations get different amounts of points!",
-  //   links: [
-  //     {
-  //       type: 'itch',
-  //       url: ''
-  //     }
-  //   ],
-  //   images: [bobaCat1, bobaCat2]
-  // }
 ];

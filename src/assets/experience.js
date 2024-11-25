@@ -11,7 +11,9 @@ export const EXPERIENCE = [
   {
     title: "Ronday Technologies",
     logo: rondayLogo,
+    logoBgColor: 'white',
     banner: rondayBanner,
+    bannerBgColor: '#f4f1ea',
     roles: [
       {
         role: "Assistant Producer",
@@ -26,56 +28,9 @@ export const EXPERIENCE = [
   {
     title: "Indie MEGABOOTH",
     logo: imbLogo,
+    logoBgColor: '',
     banner: imbBanner,
-    roles: [
-      {
-        role: "Assistant Producer",
-        date: "July 2023 – August 2024"
-      }
-    ]
-  },
-
-  {
-    title: "Jim Gray Productions",
-    roles: [
-      {
-        role: "Production Coordinator",
-        date: "July 2024 - October 2024"
-      }
-    ]
-  },
-  {
-    title: "Wicked Fox Games",
-    roles: [
-      {
-        role: "Associate Producer",
-        date: "May 2024 - Present"
-      }
-    ]
-  },
-];
-
-
-export const MOCK_EXPERIENCE = [
-  {
-    title: "Ronday Technologies",
-    logo: rondayLogo,
-    banner: rondayBanner,
-    roles: [
-      {
-        role: "Assistant Producer",
-        date: "October 2022 - July 2023"
-      },
-      {
-        role: "QA Tester",
-        date: "May 2022 - October 2022"
-      }
-    ]
-  },
-  {
-    title: "Indie MEGABOOTH",
-    logo: imbLogo,
-    banner: imbBanner,
+    bannerBgColor: '#f7f3eb',
     roles: [
       {
         role: "Assistant Producer",
@@ -86,7 +41,9 @@ export const MOCK_EXPERIENCE = [
   {
     title: "Jim Gray Productions",
     logo: jgpLogo,
+    logoBgColor: '#232325',
     banner: jgpBanner,
+    bannerBgColor: '#232325',
     roles: [
       {
         role: "Production Coordinator",
@@ -97,7 +54,9 @@ export const MOCK_EXPERIENCE = [
   {
     title: "Wicked Fox Games",
   logo: wfLogo,
+  logoBgColor: 'white',
   banner: wfBanner,
+  bannerBgColor: 'black',
   roles: [
     {
       role: "Associate Producer",

@@ -16,20 +16,37 @@ export const ExperienceCard = ({ exp }) => {
       }}
     >
       {/* check border */}
-      <Box sx={{ display: 'grid', position: 'relative' }} marginBottom='65px'>
-        <img src={`${exp.banner}`} style={{ width: '100%', borderRadius: '10px 10px 0 0' }} />
-        {/* <img
+      <Box sx={{ display: 'grid', position: 'relative', borderRadius: '10px', }} marginBottom='65px'>
+        <Box sx={{backgroundColor:  exp.bannerBgColor || 'white', height:'150px', borderRadius: '10px 10px 0 0'}}>
+          <img 
+            src={`${exp.banner}`} 
+            style={{ 
+              width: '90%', 
+              height:'80%', 
+              objectFit: 'contain', 
+              borderRadius: '10px 10px 0 0',
+            }} 
+          />
+        </Box>
+        
+        <Box sx={{
+          width: '95px', 
+          height: '95px', 
+          borderRadius: '50%',
+          position: 'absolute', 
+          top: '100%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)', 
+          backgroundColor:  exp.logoBgColor || 'black'
+        }}>
+        <img
           src={`${exp.logo}`}
           style={{
             width: '95px',
-            borderRadius: '50%',
-            // Center image
-            position: 'absolute',
-            top: '110%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            borderRadius: '50%',            
           }}
-        /> */}
+        />
+        </Box>
       </Box>
 
       <Typography variant="title1">{exp.title}</Typography>

@@ -5,7 +5,7 @@ import { SectionTitle } from "../components/SectionTitle";
 
 export const Experience = (() => {
   return (
-    <Box>
+    <Box >
       <SectionTitle title='Experience'/>
       <Box sx={{display: 'grid', gridTemplateColumns: "repeat(auto-fill, minmax(275px, 1fr) )", gap: "10px"}}>
       {

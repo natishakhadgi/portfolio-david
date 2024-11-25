@@ -5,15 +5,18 @@ import { SectionTitle } from "../components/SectionTitle";
 
 export const Projects = (() => {
   return (
-    <Box>
+    <section id='projects'>
+ <Box  >
       <SectionTitle title='Projects'/>
       <Box sx={{display: 'grid', gridTemplateColumns: "repeat(auto-fill, minmax(275px, 1fr) )", gap: "10px"}}>
       {
         PROJECTS.map(proj => {
-          return <ProjectCard proj={proj} key={proj.title}/>
+          return <ProjectCard proj={proj} key={proj?.title}/>
         })
       }
       </Box>
     </Box>
+    </section>
+   
   );
 });

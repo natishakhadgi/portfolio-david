@@ -11,10 +11,10 @@ import together3 from '../assets/images/projects/togetherAgain/screenshot-3.png'
 import together4 from '../assets/images/projects/togetherAgain/screenshot-4.png';
 import together5 from '../assets/images/projects/togetherAgain/screenshot-4.png';
 import ronday1 from '../assets/images/projects/ronday/ronday-project.png';
-import ronday2 from '../assets/images/projects/ronday/1.gif';
-import ronday3 from '../assets/images/projects/ronday/2.gif';
-import ronday4 from '../assets/images/projects/ronday/3.gif';
-import ronday5 from '../assets/images/projects/ronday/4.gif';
+import ronday2 from '../assets/images/projects/ronday/ronday-one.gif';
+import ronday3 from '../assets/images/projects/ronday/ronday-two.gif';
+import ronday4 from '../assets/images/projects/ronday/ronday-three.gif';
+import ronday5 from '../assets/images/projects/ronday/ronday-four.gif';
 import daa1 from '../assets/images/projects/darkAgeAsunder/darkageasunder.png';
 import daa2 from '../assets/images/projects/darkAgeAsunder/screenshot-1.png';
 import daa3 from '../assets/images/projects/darkAgeAsunder/screenshot-2.png';

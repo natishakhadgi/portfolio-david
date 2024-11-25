@@ -4,3 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+
+.navLink a:link {
+  color: 'green';
+  background-color: 'yellow';
+}
+
+
+.active {
+  color: red;
+}

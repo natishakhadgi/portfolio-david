@@ -23,10 +23,11 @@ export const ProjectCard = ({proj}) => {
       <div>
         <div>
           <img 
-            src={`${proj.images[0]}`} 
+            src={`${proj?.images && proj?.images[0]}`} 
             style={{
               width:'100%', 
-              height: '180px'
+              height: '180px',
+              borderRadius: '10px'
             }}
           />
         </div>

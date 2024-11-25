@@ -5,23 +5,23 @@ import GPM from './images/certificates/gpm.png';
 export const NAV = [
   {
     name: 'Home',
-    link: '#'
+    link: 'home'
   },
   {
     name: 'About Me',
-    link: '#about'
+    link: 'about'
   },
   {
     name: 'Experience',
-    link: '#experience'
+    link: 'experience'
   },
   {
     name: 'Projects',
-    link: '#projects'
+    link: 'projects'
   },
   {
     name: 'Certificates',
-    link: '#certificates'
+    link: 'certificates'
   },
 ];
 

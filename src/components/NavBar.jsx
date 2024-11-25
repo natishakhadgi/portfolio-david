@@ -1,4 +1,6 @@
 import { useState } from "react";
+import '../App.css'
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { Button, Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { StyledBox } from "../components/StyledBox";
@@ -6,6 +8,8 @@ import { NAV } from "../assets/constants";
 
 export const NavBar = (() => {
   const [anchorElNav, setAnchorElNav] = useState(null);
+  const [activeSection, setActiveSection] = useState(null);
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -14,6 +18,13 @@ export const NavBar = (() => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const handleSetActiveLink = (page) => {
+    console.log('activeSection::',activeSection)
+    console.log('to section::', page?.link)
+    setActiveSection(page?.link);
+  };
+
 
   return (
     <StyledBox
@@ -24,7 +35,7 @@ export const NavBar = (() => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '0 20px',
+        padding: '20px',
         gap: 2,
         background: 'rgba(255, 255, 255, 0.5)',
         boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.05)',
@@ -74,23 +85,39 @@ export const NavBar = (() => {
           {NAV.map((page) => (
             <MenuItem
               key={page.name}
-            onClick={handleCloseNavMenu}
+              onClick={handleCloseNavMenu}
             >
-              <Typography variant='navItem' sx={{ textAlign: 'center' }}>{page.name}</Typography>
+              <Link
+                to={page?.link}
+                smooth={true}
+                duration={500}
+                activeClass="active"
+                spy={true}
+                className={activeSection === page?.link ? 'active' : ''}
+                // onClick={() => handleSectionClick(page)}
+              >
+                {page.name}
+              </Link>
+              {/* <Typography variant='navItem' sx={{ textAlign: 'center' }}></Typography> */}
             </MenuItem>
           ))}
         </Menu>
       </Box>
 
-      <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+      <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: '10px' }}>
         {NAV.map((page) => (
-          <Button
-            key={page.name}
-            // onClick={handleCloseNavMenu}
-            sx={{ my: 2, color: 'white', display: 'block' }}
+          <Link
+            class='navLink'
+            to={page?.link}
+            smooth={true}
+            duration={300}
+            activeClass="active"
+            spy={true}
+            offset={page?.link == 'certificates' ? -100 : -350}
+            onClick={() => handleSetActiveLink(page)}
           >
-            <Typography variant='navItem' sx={{ textAlign: 'center' }}>{page.name}</Typography>
-          </Button>
+          <Typography variant='navItem' sx={{ textAlign: 'center' }}>{page.name}</Typography>
+        </Link>
         ))}
       </Box>
     </StyledBox>

@@ -6,7 +6,8 @@ import { onHoverShadow } from "../assets/styles";
 
 export const Certificates = (() => {
   return (
-    <Box>
+    <section id='certificates'>
+    <Box  >
       <SectionTitle title='Certificates'/>
       <Box display={'grid'} gridTemplateColumns="repeat(auto-fit, minmax(320px, 1fr))" gap='10px' justifyItems={'center'}>
         {
@@ -27,5 +28,6 @@ export const Certificates = (() => {
         }
       </Box>
     </Box>
+    </section>
   );
 });

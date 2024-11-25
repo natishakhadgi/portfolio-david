@@ -1,4 +1,6 @@
 import './App.css'
+import React, { useState, useEffect } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { Box, Container } from '@mui/material';
 import { NavBar } from './components/NavBar';
 import { Hero } from './sections/Hero';
@@ -23,7 +25,8 @@ function App() {
         background: 'radial-gradient(circle,rgba(170, 170, 170, 1) 0%,rgba(255, 255, 255, 1) 100%)'
       }}
     >
-      <NavBar />
+      <section id='home'></section>
+      <NavBar/>
       <StyledBox 
         sx={{
           width: '90vw',
@@ -34,9 +37,12 @@ function App() {
           background: 'rgba(255, 255, 255, 0.5)'
         }}
       >
+        
         <Hero />
         <SubHero />
-        <Experience />
+        <section id='experience'>
+          <Experience />
+        </section>
         <Projects />
         <Certificates />
       </StyledBox>

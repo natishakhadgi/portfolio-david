@@ -1,5 +1,5 @@
 
-import { Box, Dialog, DialogTitle, Typography } from "@mui/material";
+import { Button, Box, Dialog, DialogTitle, Typography } from "@mui/material";
 import youtubeLogo from '../assets/images/links/YouTube-Logo.png';
 import itchLogo from '../assets/images/links/itch.png';
 import steamLogo from '../assets/images/links/steam.jpg';
@@ -33,7 +33,7 @@ export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
         <Box sx={{width: '80vw'}}>
           <Slider {...sliderSettings}>
             {
-              proj.images.map((img, idx) => {
+              proj?.images?.map((img, idx) => {
                 return <img src={`${img}`} key={`${proj.title}::img::${idx}`}/>
               })
             }
@@ -43,11 +43,15 @@ export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
         <Box display={'grid'} gridTemplateColumns="auto auto auto" gap='10px' justifyItems={'center'}>
         {
           proj?.links?.map((link) => {
-            return <img 
-              src={getLinkImg(link?.type)} 
-              key={`${proj.title}::${link?.type}::link`} 
-              height='45px'
-            />
+            return (
+              <Button target="_blank" href={link.url}>
+                <img 
+                src={getLinkImg(link?.type)} 
+                key={`${proj.title}::${link?.type}::link`} 
+                height='45px'
+              />
+              </Button>
+            )
           })
         }
         </Box>

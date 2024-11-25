@@ -16,12 +16,16 @@ export const Certificates = (() => {
               <StyledBox
                 key={`${cert.name}`}
                 maxHeight='400px'
-                sx={onHoverShadow}
+                sx={{
+                  onHoverShadow,
+                  padding: '20px 0'
+                }}
+                width={'100%'}
               >
                 <div>
                   <img src={`${cert.image}`} style={{ width: 'auto', height: '200px' }} />
                 </div>
-                <Typography variant='title2'>{cert.name}</Typography>
+                <Typography variant='title2' sx={{mx: '10px'}}>{cert.name}</Typography>
               </StyledBox>
             )
           })

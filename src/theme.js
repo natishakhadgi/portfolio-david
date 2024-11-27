@@ -33,7 +33,6 @@ let theme = createTheme(
         fontSize: '25px',
         fontWeight: 500,
         color: '#000000',
-        textDecoration: 'underline'
       },
       title2: { // Exp Role, Proj Title, Certificate Title
         fontFamily: 'Poppins',

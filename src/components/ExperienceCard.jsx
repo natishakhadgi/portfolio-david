@@ -17,12 +17,20 @@ export const ExperienceCard = ({ exp }) => {
     >
       {/* check border */}
       <Box sx={{ display: 'grid', position: 'relative', borderRadius: '10px', }} marginBottom='65px'>
-        <Box sx={{backgroundColor:  exp.bannerBgColor || 'white', height:'150px', borderRadius: '10px 10px 0 0'}}>
+        <Box sx={{
+          backgroundColor:  
+          exp.bannerBgColor || 'white', 
+          height:'150px', 
+          borderRadius: '10px 10px 0 0',
+          display: 'flex',
+          justifyContent:'center',
+          alignItems:'center'
+        }}>
           <img 
             src={`${exp.banner}`} 
             style={{ 
-              width: '90%', 
-              height:'80%', 
+              width: '50%', 
+              height:'65%', 
               objectFit: 'contain', 
               borderRadius: '10px 10px 0 0',
             }} 

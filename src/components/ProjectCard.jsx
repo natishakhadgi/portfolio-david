@@ -27,7 +27,8 @@ export const ProjectCard = ({proj}) => {
             style={{
               width:'100%', 
               height: '180px',
-              borderRadius: '10px'
+              borderRadius: '10px',
+              objectFit:'cover'
             }}
           />
         </div>

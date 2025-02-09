@@ -46,10 +46,16 @@ let theme = createTheme(
         fontWeight: 200,
         color: '#000000',
       },
-      body2: { // Experience Date, Project Popup desc
+      body2: { // Experience Date
         fontFamily: 'Poppins',
         fontWeight: 400,
         fontSize: '20px',
+        color: '#000000'
+      },
+      body3: { // Project Popup desc
+        fontFamily: 'Poppins',
+        fontWeight: 400,
+        fontSize: '17px',
         color: '#000000'
       },
       bullet: {
@@ -62,11 +68,17 @@ let theme = createTheme(
         fontFamily: 'Poppins',
         fontWeight: 500,
         fontSize: '16px',
-        color: 'black'
+        color: 'black',
+        '&:hover': {
+          color: '#c8c8c8',
+        }
       },
       button: {
+        fontFamily: 'Poppins',
+        fontSize: '16px',
         textTransform: 'none',
-        color: '#F5F5F5'
+        color: 'black',
+        
       }
     },
     palette: {

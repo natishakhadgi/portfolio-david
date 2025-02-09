@@ -28,9 +28,16 @@ export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
 
   return (
     <Dialog onClose={handleClose} open={openDialog} fullWidth={true} maxWidth={'xl'} id='popup'>
-      <Box id='popup_box' sx={{height:'80vh', display:'flex', flexDirection: 'column', alignItems: 'center', gap:'10px', bgcolor:'white'}}>
+      <Box id='popup_box' sx={{
+        height:'85vh', 
+        display:'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center',
+        bgcolor:'white',
+        position: 'relative'
+      }}>
         <DialogTitle><Typography variant='title1'>{proj.title}</Typography></DialogTitle>
-        <Box sx={{width: '80vw'}}>
+        <Box sx={{width: '70vw'}}>
           <Slider {...sliderSettings}>
             {
               proj?.images?.map((img, idx) => {
@@ -38,9 +45,11 @@ export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
               })
             }
           </Slider>   
-          <Typography variant='body2' sx={{mt:'30px'}}>{proj.desc}</Typography>
         </Box>
-        <Box display={'grid'} gridTemplateColumns="auto auto auto" gap='10px' justifyItems={'center'}>
+        <Box sx={{width: '70vw', mt: '30px'}}>
+          <Typography variant='body3'>{proj.desc}</Typography>
+        </Box>
+        <Box display={'grid'} gridTemplateColumns="auto auto auto" gap='10px' justifyItems={'center'} position='absolute' bottom={'20px'}>
         {
           proj?.links?.map((link) => {
             return (

@@ -2,6 +2,7 @@ import { Box, Button, Grid2, Typography } from "@mui/material";
 import { INTRO_BLURB, LINKS } from "../assets/constants";
 import { StyledBox } from "../components/StyledBox";
 import DavidImg from '../assets/images/davidheadshot.png'
+import { roundWhiteButton } from "../assets/styles";
 
 export const Hero = (() => {
 
@@ -19,9 +20,9 @@ export const Hero = (() => {
           <Grid2 item size={{ xs: 12, md: 7, lg: 8 }} >
             <Box>
               <Typography align='left' variant="h1">David Koster</Typography>
-              <Box>
+              <Box sx={{marginTop: '20px'}}>
                 <Typography variant='body1' align='left'>{INTRO_BLURB}</Typography>
-                <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+                <Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 2, marginTop: '20px' }}>
                   {
                     LINKS.map(link => {
                       return <Button
@@ -29,6 +30,14 @@ export const Hero = (() => {
                         variant='outlined'
                         size='small'
                         href={link.url}
+                        sx={{
+                          color: 'black',
+                          fontSize: '16px',
+                          ...roundWhiteButton,
+                          '&:hover': {
+                            backgroundColor: 'white'
+                          }
+                        }}
                       >
                         {link.name}
                       </Button>

@@ -18,7 +18,6 @@ function App() {
         display:'flex', 
         flexDirection: 'column',
         gap: '20px',
-        paddingTop: '20px',
         width: '100vw',
         justifyContent:'center', 
         alignItems: 'center', 
@@ -31,6 +30,7 @@ function App() {
         sx={{
           width: '90vw',
           // padding: '50px 100px',
+          mb: '40px',
           display:'flex',
           flexDirection: 'column',
           gap: 2,

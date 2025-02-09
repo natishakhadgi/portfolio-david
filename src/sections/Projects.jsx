@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { PROJECTS } from "../assets/projects";
 import { ProjectCard } from "../components/ProjectCard";
 import { SectionTitle } from "../components/SectionTitle";
@@ -6,9 +6,16 @@ import { SectionTitle } from "../components/SectionTitle";
 export const Projects = (() => {
   return (
     <section id='projects'>
- <Box  >
+ <Box>
       <SectionTitle title='Projects'/>
-      <Box sx={{display: 'grid', gridTemplateColumns: "repeat(auto-fill, minmax(275px, 1fr) )", gap: "10px"}}>
+      <Box sx={{
+        display: 'flex', 
+        flex: '1 0 350px', // 
+        flexDirection: "row", 
+        flexWrap: 'wrap',
+        justifyContent:'center', 
+        gap: "10px",
+      }}>
       {
         PROJECTS.map(proj => {
           return <ProjectCard proj={proj} key={proj?.title}/>

@@ -17,6 +17,7 @@ export const ProjectCard = ({proj}) => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
+        width: '340px',
         ...onHoverEnlarge
       }}
     >

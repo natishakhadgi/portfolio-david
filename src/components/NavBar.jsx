@@ -1,10 +1,11 @@
 import { useState } from "react";
 import '../App.css'
 import { Link, animateScroll as scroll } from 'react-scroll';
-import { Button, Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
+import { Box, Button, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { StyledBox } from "../components/StyledBox";
 import { NAV } from "../assets/constants";
+import { roundWhiteButton } from "../assets/styles";
 
 export const NavBar = (() => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -19,18 +20,12 @@ export const NavBar = (() => {
     setAnchorElNav(null);
   };
 
-  const handleSetActiveLink = (page) => {
-    console.log('activeSection::',activeSection)
-    console.log('to section::', page?.link)
-    setActiveSection(page?.link);
-  };
-
 
   return (
     <StyledBox
       sx={{
         position: 'sticky',
-        top: '20px',
+        top: '10px',
         width: '90vw',
         display: 'flex',
         alignItems: 'center',
@@ -94,7 +89,7 @@ export const NavBar = (() => {
                 activeClass="active"
                 spy={true}
                 className={activeSection === page?.link ? 'active' : ''}
-                // onClick={() => handleSectionClick(page)}
+              // onClick={() => handleSectionClick(page)}
               >
                 {page.name}
               </Link>
@@ -107,17 +102,33 @@ export const NavBar = (() => {
       <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: '10px' }}>
         {NAV.map((page) => (
           <Link
-            class='navLink'
             to={page?.link}
             smooth={true}
             duration={300}
             activeClass="active"
             spy={true}
             offset={page?.link == 'certificates' ? -100 : -350}
-            onClick={() => handleSetActiveLink(page)}
           >
-          <Typography variant='navItem' sx={{ textAlign: 'center' }}>{page.name}</Typography>
-        </Link>
+
+            <Button
+              key={`nav_link::${page.name}`}
+              variant='outlined'
+              size='small'
+              sx={{
+                color: 'black',
+                fontSize: '16px',
+                width: '125px',
+                borderRadius: '30px',
+                '&:hover': {
+                  ...roundWhiteButton,
+                  backgroundColor: 'white'
+                }
+              }}
+            >
+              {page.name}
+            </Button>
+          </Link>
+
         ))}
       </Box>
     </StyledBox>

@@ -32,7 +32,7 @@ export const LINKS = [
   },
   {
     name: 'Resume',
-    url: ''
+    url: 'https://oteresk.github.io/assets/David%20Koster%20Resume.pdf'
   },
   {
     name: 'LinkedIn',
@@ -41,6 +41,10 @@ export const LINKS = [
   {
     name: 'Twitter',
     url: 'https://twitter.com/Oteresk'
+  },
+  {
+    name: 'BlueSky',
+    url: 'https://bsky.app/profile/oteresk.bsky.social'
   }
 ];
 

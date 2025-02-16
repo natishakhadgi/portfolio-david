@@ -11,7 +11,7 @@ export const EXPERIENCE = [
   {
     title: "Ronday Technologies",
     logo: rondayLogo,
-    logoBgColor: 'white',
+    logoBgColor: '#f4f1ea',
     banner: rondayBanner,
     bannerBgColor: '#f4f1ea',
     roles: [
@@ -28,7 +28,7 @@ export const EXPERIENCE = [
   {
     title: "Indie MEGABOOTH",
     logo: imbLogo,
-    logoBgColor: '',
+    logoBgColor: '#f7f3eb',
     banner: imbBanner,
     bannerBgColor: '#f7f3eb',
     roles: [

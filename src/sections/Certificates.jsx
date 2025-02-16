@@ -9,7 +9,14 @@ export const Certificates = (() => {
     <section id='certificates'>
     <Box  >
       <SectionTitle title='Certificates'/>
-      <Box display={'grid'} gridTemplateColumns="repeat(auto-fit, minmax(320px, 1fr))" gap='10px' justifyItems={'center'}>
+      {/* <Box display={'grid'} gridTemplateColumns="repeat(auto-fit, minmax(320px, 1fr))" gap='10px' justifyItems={'center'}> */}
+      <Box sx={{
+        display: 'flex',
+        flexDirection: "row",
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        gap: "10px",
+      }}>
         {
           CERTIFICATES.map(cert => {
             return (
@@ -20,7 +27,7 @@ export const Certificates = (() => {
                   onHoverShadow,
                   padding: '20px 0'
                 }}
-                width={'100%'}
+                width={'320px'}
               >
                 <div>
                   <img src={`${cert.image}`} style={{ width: 'auto', height: '200px' }} />

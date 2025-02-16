@@ -10,7 +10,6 @@ export const Projects = (() => {
       <SectionTitle title='Projects'/>
       <Box sx={{
         display: 'flex', 
-        flex: '1 0 350px', // 
         flexDirection: "row", 
         flexWrap: 'wrap',
         justifyContent:'center', 

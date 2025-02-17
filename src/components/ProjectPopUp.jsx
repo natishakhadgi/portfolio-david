@@ -2,7 +2,7 @@
 import { Button, Box, Dialog, DialogTitle, Typography } from "@mui/material";
 import youtubeLogo from '../assets/images/links/YouTube-Logo.png';
 import itchLogo from '../assets/images/links/itch.png';
-import steamLogo from '../assets/images/links/steam.jpg';
+import steamLogo from '../assets/images/links/steam.png';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

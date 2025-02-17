@@ -1,6 +1,7 @@
-import bobaCat1 from '../assets/images/projects/bobaCat/screenshot-1.png';
-import bobaCat2 from '../assets/images/projects/bobaCat/screenshot-2.png';
-import bobaCat3 from '../assets/images/projects/bobaCat/screenshot-3.png';
+import bobaCat1 from '../assets/images/projects/bobaCat/bobacat.png';
+import bobaCat2 from '../assets/images/projects/bobaCat/screenshot-1.png';
+import bobaCat3 from '../assets/images/projects/bobaCat/screenshot-2.png';
+import bobaCat4 from '../assets/images/projects/bobaCat/screenshot-3.png';
 import satiscifi1 from '../assets/images/projects/satiscifi/screenshot-1.png';
 import satiscifi2 from '../assets/images/projects/satiscifi/screenshot-2.png';
 import satiscifi3 from '../assets/images/projects/satiscifi/screenshot-3.png';
@@ -9,7 +10,7 @@ import together1 from '../assets/images/projects/togetherAgain/screenshot-1.png'
 import together2 from '../assets/images/projects/togetherAgain/screenshot-2.png';
 import together3 from '../assets/images/projects/togetherAgain/screenshot-3.png';
 import together4 from '../assets/images/projects/togetherAgain/screenshot-4.png';
-import together5 from '../assets/images/projects/togetherAgain/screenshot-4.png';
+import together5 from '../assets/images/projects/togetherAgain/screenshot-5.png';
 import ronday1 from '../assets/images/projects/ronday/ronday-project.png';
 import ronday2 from '../assets/images/projects/ronday/ronday-one.gif';
 import ronday3 from '../assets/images/projects/ronday/ronday-two.gif';
@@ -18,10 +19,14 @@ import ronday5 from '../assets/images/projects/ronday/ronday-four.gif';
 import daa1 from '../assets/images/projects/darkAgeAsunder/darkageasunder.png';
 import daa2 from '../assets/images/projects/darkAgeAsunder/screenshot-1.png';
 import daa3 from '../assets/images/projects/darkAgeAsunder/screenshot-2.png';
-import daa4 from '../assets/images/projects/darkAgeAsunder/screenshot-1.jpg';
-import daa5 from '../assets/images/projects/darkAgeAsunder/screenshot-2.jpg';
-import daa6 from '../assets/images/projects/darkAgeAsunder/screenshot-3.png';
-import daa7 from '../assets/images/projects/darkAgeAsunder/screenshot-4.png';
+import daa4 from '../assets/images/projects/darkAgeAsunder/screenshot-3.png';
+import daa5 from '../assets/images/projects/darkAgeAsunder/screenshot-4.png';
+import daa6 from '../assets/images/projects/darkAgeAsunder/screenshot-5.png';
+import daa7 from '../assets/images/projects/darkAgeAsunder/screenshot-6.png';
+import daa8 from '../assets/images/projects/darkAgeAsunder/screenshot-7.png';
+import daa9 from '../assets/images/projects/darkAgeAsunder/screenshot-8.png';
+import daa10 from '../assets/images/projects/darkAgeAsunder/screenshot-9.png';
+import daa11 from '../assets/images/projects/darkAgeAsunder/screenshot-10.png';
 import roe1 from '../assets/images/projects/riseOfElements/roe.png';
 import roe2 from '../assets/images/projects/riseOfElements/screenshot-1.png';
 import roe3 from '../assets/images/projects/riseOfElements/screenshot-2.png';
@@ -65,7 +70,7 @@ export const PROJECTS = [
         url: 'https://davidkoster.itch.io/boba-cat'
       },
     ],
-    images: [bobaCat1, bobaCat2, bobaCat3]
+    images: [bobaCat1, bobaCat2, bobaCat3, bobaCat4]
   },
   {
     title: 'SatiSciFi Virtual Concert',
@@ -109,7 +114,7 @@ export const PROJECTS = [
         url: 'https://store.steampowered.com/app/3200770/Dark_Age_Asunder/'
       }
     ],
-    images: [daa1, daa2, daa3, daa4, daa5, daa6, daa7]
+    images: [daa1, daa2, daa3, daa4, daa5, daa6, daa7, daa8, daa9, daa10, daa11]
   },
   {
     title: 'Rise of Elements',
@@ -119,6 +124,7 @@ export const PROJECTS = [
         type: 'steam',
         url: 'https://store.steampowered.com/app/3170850/Rise_of_Elements/'
       }
+
     ],
     images: [roe1, roe2, roe3, roe4, roe5, roe6]
   },

@@ -123,8 +123,11 @@ export const PROJECTS = [
       {
         type: 'steam',
         url: 'https://store.steampowered.com/app/3170850/Rise_of_Elements/'
+      },
+      {
+        type: 'kickstarter',
+        url: 'hhttps://www.kickstarter.com/projects/wickedfoxgames/riseofelements'
       }
-
     ],
     images: [roe1, roe2, roe3, roe4, roe5, roe6]
   },

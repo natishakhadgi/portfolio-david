@@ -3,25 +3,66 @@ import { Button, Box, Dialog, DialogTitle, Typography } from "@mui/material";
 import youtubeLogo from '../assets/images/links/YouTube-Logo.png';
 import itchLogo from '../assets/images/links/itch.png';
 import steamLogo from '../assets/images/links/steam.png';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import kickStarterLogo from '../assets/images/links/kickstarter.png';
 
-const sliderSettings = {
-  arrows: true,
-  dots: true,
-  infinite: true,
-  slidesToShow: 1,
-  // centerMode: true, // use for mobile preview
-};
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const getLinkImg = (type => {
   if (type === 'youtube') return youtubeLogo;
   else if (type === 'itch') return itchLogo;
+  else if (type === 'kickstarter') return kickStarterLogo;
   else return steamLogo;
 });
 
-export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
+const StyledCarousel = ({proj}) => {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
+  
+  return (
+    <Box sx={{ width: { xs: '80vw', sm: '65vw', lg: '55vw' }, height: 'auto', position:'relative' }}>
+    <Carousel
+      responsive={responsive}
+      ssr={true} // means to render carousel on server-side.
+      showDots={true}
+      infinite={true}
+      customTransition="transform 250ms ease-in-out"
+      transitionDuration={500}
+      containerClass="carousel-container"
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      dotListClass="custom-dot-list-style"
+      itemClass="carousel-item-padding-40-px"
+      renderDotsOutside={true}
+    >
+      {proj?.images?.map((img, idx) => {
+        return <img
+          src={`${img}`}
+          key={`${proj.title}::img::${idx}`}
+          width={'100%'}
+          height={'auto'}
+        />
+      })}
+    </Carousel>
+  </Box>
+  )
+};
+
+export const ProjectPopUp = ({ proj, openDialog, setOpenDialog }) => {
   const handleClose = () => {
     setOpenDialog(false);
   };
@@ -29,40 +70,33 @@ export const ProjectPopUp = ({proj, openDialog, setOpenDialog}) => {
   return (
     <Dialog onClose={handleClose} open={openDialog} fullWidth={true} maxWidth={'xl'} id='popup'>
       <Box id='popup_box' sx={{
-        height:'85vh', 
-        display:'flex', 
-        flexDirection: 'column', 
+        height: '85vh',
+        display: 'flex',
+        flexDirection: 'column',
         alignItems: 'center',
-        bgcolor:'white',
+        bgcolor: 'white',
         position: 'relative'
       }}>
         <DialogTitle><Typography variant='title1'>{proj.title}</Typography></DialogTitle>
-        <Box sx={{width: '70vw'}}>
-          <Slider {...sliderSettings}>
-            {
-              proj?.images?.map((img, idx) => {
-                return <img src={`${img}`} key={`${proj.title}::img::${idx}`}/>
-              })
-            }
-          </Slider>   
-        </Box>
-        <Box sx={{width: '70vw', mt: '30px'}}>
+
+       <StyledCarousel proj={proj}/>
+        <Box sx={{ width: { xs: '80vw', sm: '65vw', lg: '55vw' }, mt: '30px' }}>
           <Typography variant='body3'>{proj.desc}</Typography>
         </Box>
-        <Box display={'grid'} gridTemplateColumns="auto auto auto" gap='10px' justifyItems={'center'} position='absolute' bottom={'20px'}>
-        {
-          proj?.links?.map((link) => {
-            return (
-              <Button target="_blank" href={link.url}>
-                <img 
-                src={getLinkImg(link?.type)} 
-                key={`${proj.title}::${link?.type}::link`} 
-                height='45px'
-              />
-              </Button>
-            )
-          })
-        }
+        <Box display={'grid'} gridTemplateColumns="auto auto auto" gap='10px' justifyItems={'center'}>
+          {
+            proj?.links?.map((link) => {
+              return (
+                <Button target="_blank" href={link.url}>
+                  <img
+                    src={getLinkImg(link?.type)}
+                    key={`${proj.title}::${link?.type}::link`}
+                    height='45px'
+                  />
+                </Button>
+              )
+            })
+          }
         </Box>
       </Box>
     </Dialog>

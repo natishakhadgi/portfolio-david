@@ -20,7 +20,10 @@ export const Hero = (() => {
           <Grid2 item size={{ xs: 12, md: 7, lg: 8 }} >
             <Box>
               <Typography align='left' variant="h1">David Koster</Typography>
-              <Box sx={{marginTop: '20px'}}>
+              <Box sx={{ marginTop: '20px' }}>
+              <Box sx={{display: {xs: 'block', md: 'none'}, mb:'20px'}}>
+                <img src={DavidImg} style={{ width: '100%', maxWidth: '320px', borderRadius: '10px' }} />
+              </Box>
                 <Typography variant='body1' align='left'>{INTRO_BLURB}</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 2, marginTop: '20px' }}>
                   {
@@ -49,7 +52,7 @@ export const Hero = (() => {
           </Grid2>
 
           <Grid2 item size={{ xs: 12, md: 5, lg: 4 }}>
-            <Box>
+            <Box sx={{display: {xs: 'none', md: 'block'}}}>
               <img src={DavidImg} style={{ width: '100%', borderRadius: '10px' }} />
             </Box>
           </Grid2>

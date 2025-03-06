@@ -22,8 +22,11 @@ export const ProjectCard = ({proj}) => {
       }}
     >
       <div>
-        <div>
-          <img 
+        <Box 
+          onClick={() => setOpenDialog(true)}
+          sx={{'&:hover': {cursor: 'pointer'}}}
+        >
+        <img 
             src={`${proj?.images && proj?.images[0]}`} 
             style={{
               width:'100%', 
@@ -32,7 +35,7 @@ export const ProjectCard = ({proj}) => {
               objectFit:'cover'
             }}
           />
-        </div>
+        </Box>
         <Typography variant='title2'>{proj.title}</Typography>
       </div>
       <div>

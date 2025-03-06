@@ -1,7 +1,6 @@
 import './App.css'
-import React, { useState, useEffect } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import { Box, Container } from '@mui/material';
+import React from 'react';
+import { Box } from '@mui/material';
 import { NavBar } from './components/NavBar';
 import { Hero } from './sections/Hero';
 import { Experience } from './sections/Experience';

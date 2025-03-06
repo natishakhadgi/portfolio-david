@@ -70,20 +70,30 @@ export const ProjectPopUp = ({ proj, openDialog, setOpenDialog }) => {
   return (
     <Dialog onClose={handleClose} open={openDialog} fullWidth={true} maxWidth={'xl'} id='popup'>
       <Box id='popup_box' sx={{
-        height: '85vh',
+        height: {xs: '95vh', sm: '85vh'},
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         bgcolor: 'white',
-        position: 'relative'
+        position: 'relative',
+        justifyContent: 'space-between'
       }}>
         <DialogTitle><Typography variant='title1'>{proj.title}</Typography></DialogTitle>
 
        <StyledCarousel proj={proj}/>
-        <Box sx={{ width: { xs: '80vw', sm: '65vw', lg: '55vw' }, mt: '30px' }}>
+        <Box sx={{ width: { xs: '80vw', sm: '65vw', lg: '55vw', overflow: 'scroll' }, mt: '30px' }}>
           <Typography variant='body3'>{proj.desc}</Typography>
         </Box>
-        <Box display={'grid'} gridTemplateColumns="auto auto auto" gap='10px' justifyItems={'center'}>
+        <Box 
+          display={'grid'} 
+          gridTemplateColumns="auto auto auto" 
+          gap='10px' 
+          justifyItems={'center'}
+          // sx={{
+          //   position: 'absolute',
+          //   bottom: 0
+          // }}
+        >
           {
             proj?.links?.map((link) => {
               return (

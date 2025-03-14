@@ -26,15 +26,16 @@ export const ProjectCard = ({proj}) => {
           onClick={() => setOpenDialog(true)}
           sx={{'&:hover': {cursor: 'pointer'}}}
         >
-        <img 
-            src={`${proj?.images && proj?.images[0]}`} 
-            style={{
-              width:'100%', 
-              height: '180px',
-              borderRadius: '10px',
-              objectFit:'cover'
-            }}
-          />
+          <Box 
+           component="img"
+           src={`${proj?.images && proj?.images[0]}`} 
+           sx={{
+             height: {xs: '180px', xxl: '220px'},
+             width:'100%', 
+             borderRadius: '10px',
+             objectFit:'cover'
+           }}
+           />
         </Box>
         <Typography variant='title2'>{proj.title}</Typography>
       </div>

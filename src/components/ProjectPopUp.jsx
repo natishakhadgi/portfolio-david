@@ -4,6 +4,7 @@ import youtubeLogo from '../assets/images/links/YouTube-Logo.png';
 import itchLogo from '../assets/images/links/itch.png';
 import steamLogo from '../assets/images/links/steam.png';
 import kickStarterLogo from '../assets/images/links/kickstarter.png';
+import metaLogo from '../assets/images/links/meta.png';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -12,6 +13,7 @@ const getLinkImg = (type => {
   if (type === 'youtube') return youtubeLogo;
   else if (type === 'itch') return itchLogo;
   else if (type === 'kickstarter') return kickStarterLogo;
+  else if (type === 'meta') return metaLogo;
   else return steamLogo;
 });
 
@@ -68,9 +70,16 @@ export const ProjectPopUp = ({ proj, openDialog, setOpenDialog }) => {
   };
 
   return (
-    <Dialog onClose={handleClose} open={openDialog} fullWidth={true} maxWidth={'xl'} id='popup'>
+    <Dialog onClose={handleClose} 
+    open={openDialog} 
+    fullWidth={true} 
+    maxWidth={'xl'} 
+    id='popup'
+    PaperProps={{ sx: { borderRadius: "20px" } }}
+    >
       <Box id='popup_box' sx={{
         height: {xs: '95vh', sm: '85vh'},
+        //borderRadius: '10px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

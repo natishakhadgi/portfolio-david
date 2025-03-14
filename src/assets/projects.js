@@ -63,7 +63,7 @@ export const PROJECTS = [
   // },
   {
     title: 'Boba Cat',
-    desc: "Make boba and prove you're the best milk tea shop in town! In this game, you take control and choose what ingredients to put into milk tea. Different combinations get different amounts of points!",
+    desc: "Make boba and prove you're the best milk tea shop in town! In this game, you take control and choose what ingredients to put into milk tea. Different combinations get different amounts of points! ", 
     links: [
       {
         type: 'itch',
@@ -74,7 +74,7 @@ export const PROJECTS = [
   },
   {
     title: 'SatiSciFi Virtual Concert',
-    desc: "Collaborative effort to display a virtual concert scene in Unity.",
+    desc: "Collaborative effort to display a virtual concert scene in Unity. ",
     links: [
       {
         type: 'itch',
@@ -126,7 +126,7 @@ export const PROJECTS = [
       },
       {
         type: 'kickstarter',
-        url: 'hhttps://www.kickstarter.com/projects/wickedfoxgames/riseofelements'
+        url: 'https://www.kickstarter.com/projects/wickedfoxgames/riseofelements'
       }
     ],
     images: [roe1, roe2, roe3, roe4, roe5, roe6]
@@ -138,6 +138,10 @@ export const PROJECTS = [
       {
         type: 'steam',
         url: 'https://store.steampowered.com/app/3105560/Escape_from_Hadrians_Wall/'
+      },
+      {
+        type: 'meta',
+        url: 'https://www.meta.com/experiences/escape-from-hadrians-wall-demo/8709395859124519/'
       }
     ],
     images: [escape1, escape2, escape3, escape4, escape5, escape6, escape7, escape8, escape9, escape10, escape11, escape12]
